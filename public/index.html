@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body class="font-Manrope">
+    <main
+      class="advice-container h-CalcVh bg-secondary-300 flex justify-center items-center flex-col"
+    >
+      <div
+        class="card bg-secondary-200 rounded-xl p-10 w-fit text-center relative"
+      >
+        <div class="col-start-auto">
+          <p
+            class="text-primary-200 uppercase tracking-wider font-semibold text-xs"
+            id="advice-id"
+          >
+            Advice #<span></span>
+          </p>
+        </div>
+        <div class="w-[295px] sm:w-[444px] mx-auto py-6">
+          <p
+            class="text-primary-100 font-extrabold leading-relaxed text-xl"
+            id="advice-text"
+          >
+            &OpenCurlyDoubleQuote;<span></span>&CloseCurlyDoubleQuote;
+          </p>
+        </div>
+        <div class="divider mb-8">
+          <svg
+            class="hidden sm:block"
+            width="444"
+            height="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z" />
+              <g transform="translate(212)" fill="#CEE3E9">
+                <rect width="6" height="16" rx="3" />
+                <rect x="14" width="6" height="16" rx="3" />
+              </g>
+            </g>
+          </svg>
+          <svg
+            class="sm:hidden"
+            width="295"
+            height="16"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z" />
+              <g transform="translate(138)" fill="#CEE3E9">
+                <rect width="6" height="16" rx="3" />
+                <rect x="14" width="6" height="16" rx="3" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <button
+          class="w-14 aspect-square rounded-full flex justify-center items-center bg-primary-200 hover:shadow-center hover:shadow-primary-200 transition-shadow duration-300 absolute -bottom- left-1/2 transform -translate-x-1/2"
+          onclick="generateAdvice()"
+        >
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+              fill="#202733"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+    <!-- copyrights -->
+    <div class="attribution bg-secondary-300 text-xs text-center text-white">
+      Challenge by
+      <a
+        class="text-[#3e52a3]"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
