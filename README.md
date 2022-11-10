@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://jahmd.github.io/Advice_generator_app/)
+- Live Site URL: [Demo](https://jahmd.github.io/Advice_generator_app/)
 
 ### Built with
 
